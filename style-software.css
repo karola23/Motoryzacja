@@ -1,0 +1,48 @@
+.container__wrapper {
+  height: 1280px;
+  width: 1024px;
+  background-color: rgb(122, 160, 231);
+  position: relative;
+}
+/*.title__wrapper {
+  font-family: "Times New Roman", Times, serif;
+  padding: 190px;
+  height: 1px;
+  width: 1024px;-->*/
+}
+.poem__wrapper {
+  padding: 200px;
+  height: 5px;
+  width: 1024px;
+}
+.nav__wrapper {
+  padding: 30px;
+  height: 120px;
+  width: 1024px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*.button-fr__wrapper {
+  padding: 30px;
+  height: 120px;
+  width: 120px;
+}
+.button-ko__wrapper {
+  padding: 30px;
+  height: 120px;
+  width: 120px;
+  justify-content: center;
+}
+.button-ni__wrapper {
+  padding: 30px;
+  height: 120px;
+  width: 120px;
+  justify-content: right;*/
+}
+
+.list__wrapper{
+    padding: 100px;
+    height: 50px;
+    width: 100px;
+}

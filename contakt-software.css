@@ -1,0 +1,35 @@
+.contakt__wrapper {
+    @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=latin-ext";
+  
+    $font: "Roboto", sans-serif;
+  
+    body {
+      background-color: #fcfcfc;
+    }
+  
+    .form-page {
+      max-width: 1024px;
+      margin: 0 auto;
+      margin-top: 100px;
+      font-family: $font;
+      background-color: #fefefe;
+      padding: 50px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      border: 2px solid #fafafa;
+  
+      &__last-change {
+        text-align: right;
+        color: #4f7076;
+        font-size: 0.75rem;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  
+    .client-data {
+      &__title {
+        color: #4f4f4f;
+        font-weight: 400;
+      }
+  

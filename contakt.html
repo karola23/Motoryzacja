@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SOFTWARE-Zadanie rekrutacyjne (junior)</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="moja rekrutacja">
+  <meta name="keywords" content="Java script, HTML, CSS, programowanie"/>
+  <meta name="author" content="Karolina Raźniak" />
+  <meta property="og:title" contelt="ćwiczenie programowe"/>
+  <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="contakt-software.css">
+  <script src="script-contakt-software.js" defer></script>
+
+</head>
+
+<body>
+<div class="container__wrapper">
+
+<div class="contakt__wrapper">
+    <section class="form-page">
+        <p id="lastChange" class="form-page__last-change">dziękujemy za zaufanie naszej firmie!</p>
+        <form>
+          <div class="client-data">
+            <h3 class="client-data__title">Dane klienta</h3>
+            <div class="client-data__group">
+              <input type="text" class="client-data__input" name="client-name" required placeholder="Imię">
+              <input type="text" class="client-data__input" name="client-surname" required placeholder="Nazwisko">
+            </div>
+            <div class="client-data__group">
+              <input type="text" class="client-data__input" name="client-street" required placeholder="Ulica">
+              <input type="text" class="client-data__input" name="client-postcode" required placeholder="Kod pocztowy">
+              <input type="text" class="client-data__input" name="client-city" required placeholder="Miasto">
+            </div>
+          </div>
+          <div class="company-data">
+            <h3 class="company-data__title">Dane firmy</h3>
+            <div class="company-data__group">
+             <input type="text" class="company-data__input" name="company-name" required placeholder="Nazwa">
+             <input type="text" class="company-data__input" name="company-nip" data-valid-rule="nip" maxlength=13 pattern="[\d\s\\-]+" required placeholder="NIP">
+            </div>
+            <div class="company-data__group">
+              <input type="text" class="company-data__input" name="company-street" required placeholder="Ulica">
+              <input type="text" class="company-data__input" name="company-postcode" required placeholder="Kod pocztowy">
+              <input type="text" class="company-data__input" name="company-city" required placeholder="Miasto">
+            </div>
+          </div>
+          <div class="details">
+            <h3 class="details__title">Szczegóły</h3>
+            <input type="number" class="details__sum" min=0 name="sum" required placeholder="Kwota">
+            <div class="details__group">
+              <input id="reported" class="status__input" name="status" type="radio" value="reported" required>
+              <label for="reported" class="status__label">Wystawiona</label>
+            </div>
+            <div class="details__group">
+              <input id="delivered" class="status__input" name="status" type="radio" value="delivered">
+              <label for="delivered" class="status__label">Dostarczona</label>
+            </div>
+            <div class="details__group">
+              <input id="paid" class="status__input" name="status" type="radio" value="paid">
+              <label for="paid" class="status__label">Opłacona</label>
+            </div>
+            <div class="details__group">
+              <input id="delayed" class="status__input" name="status" type="radio" value="delayed">
+              <label for="delayed" class="status__label">Opóźniona</label>
+            </div>
+            </div>
+          </div>
+        </form>
+    </section>
+</div>
+</body>

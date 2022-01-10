@@ -1,0 +1,65 @@
+.nav-bar .menu {
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+.nav-bar .menu span {
+  width: 50px;
+  height: 5px;
+  background-color: rgb(75, 75, 75);
+  margin: 3px 0;
+  position: absolute;
+  top: 0;
+}
+.nav-bar .menu span:nth-child(2) {
+  top: 10px;
+  width: 35px;
+}
+.nav-bar .menu span:last-of-type {
+  top: 20px;
+}
+.nav-bar:hover .menu span {
+  width: 50px;
+  transition: all 0.3s;
+}
+.nav-bar:hover .menu::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  border-color: transparent transparent #545b6b transparent;
+  border-width: 10px;
+  border-style: solid;
+}
+.nav-bar ul {
+  position: absolute;
+  top: 85px;
+  left: 20px;
+  display: none;
+}
+.nav-bar:hover ul {
+  display: block;
+}
+.nav-bar ul li {
+  width: 180px;
+}
+.nav-bar ul li {
+  list-style: none;
+  padding: 15px 10px;
+  background: #545b6b;
+}
+a {
+  text-decoration: none;
+  color: #26d381;
+  text-transform: capitalize;
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+li:hover a {
+  color: #00e1ff;
+  padding-left: 4px;
+  transition: all 0.3s ease-in-out;
+}
